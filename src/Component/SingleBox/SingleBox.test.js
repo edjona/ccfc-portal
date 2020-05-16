@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 import SingleBox from './SingleBox';
 import GENERAL from '../../Constant/General';
 
-// eslint-disable-next-line max-lines-per-function
 describe('Single Box', () => {
   const { EMPTY_NODE } = GENERAL;
 
@@ -11,7 +10,6 @@ describe('Single Box', () => {
   const grid = wrapper.find('Grid');
   const gridColumn = wrapper.find('GridColumn');
 
-  // eslint-disable-next-line max-lines-per-function
   describe('render', () => {
     it('should have been rendered', () => {
       expect(wrapper).toHaveLength(1);
