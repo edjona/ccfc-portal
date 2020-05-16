@@ -1,6 +1,6 @@
 import { Message } from 'semantic-ui-react';
 import React from 'react';
-import ErrorMessage from '../../Constant/ErrorMessage';
+import ErrorMessage from '../../../Constant/ErrorMessage';
 
 const getError = (loginError) => ErrorMessage[loginError];
 const buildErrorMessage = (errorMessage) => (<Message {...errorMessage} />);

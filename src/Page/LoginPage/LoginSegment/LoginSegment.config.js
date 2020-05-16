@@ -1,7 +1,7 @@
-import ID from '../../Constant/ID';
-import GENERAL from '../../Constant/General';
-import COLOR from '../../Constant/Color';
-import ELEMENT from '../../Constant/Element';
+import ID from '../../../Constant/ID';
+import GENERAL from '../../../Constant/General';
+import COLOR from '../../../Constant/Color';
+import ELEMENT from '../../../Constant/Element';
 
 const { POSITION, INPUT_TYPE, SIZE } = GENERAL;
 

@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import { Redirect, withRouter } from 'react-router-dom';
 import firebaseAuth from '../../Configuration/FireBaseAuth';
 import { useAuthContext } from '../../Configuration/Auth';
-import LoginForm from '../LoginForm/LoginForm';
+import LoginForm from './LoginForm/LoginForm';
 
 const reactRouterPropTypes = require('react-router-prop-types');
 

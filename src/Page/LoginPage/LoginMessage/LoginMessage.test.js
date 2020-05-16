@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import LoginMessage from './LoginMessage';
-import ENDPOINT from '../../Constant/Endpoint';
+import ENDPOINT from '../../../Constant/Endpoint';
 
 // eslint-disable-next-line max-lines-per-function
 describe('Login Message', () => {

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Form } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import { useAuthContext } from '../../Configuration/Auth';
+import { useAuthContext } from '../../../Configuration/Auth';
 import { buildErrorMessage, getError, is, handleErrorValidationProps } from './LoginForm.util';
-import LoginSegment from '../../Component/LoginSegment/LoginSegment';
+import LoginSegment from '../LoginSegment/LoginSegment';
 
 const LoginForm = ({ handleLogin }) => {
   const { loginError } = useAuthContext();

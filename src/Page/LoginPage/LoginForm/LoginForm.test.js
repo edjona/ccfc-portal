@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import LoginForm from './LoginForm';
-import * as AuthContext from '../../Configuration/Auth';
+import * as AuthContext from '../../../Configuration/Auth';
 
 describe('Login Form', () => {
   let wrapper;

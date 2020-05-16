@@ -3,7 +3,12 @@ import { shallow } from 'enzyme';
 import LoginSegment from './LoginSegment';
 
 describe('Login Segment', () => {
-  const wrapper = shallow(<LoginSegment />);
+  const defaultProps = {
+    isUserNotFound: false,
+    isWrongPassword: false,
+  };
+
+  const wrapper = shallow(<LoginSegment {...defaultProps} />);
 
   describe('render', () => {
     it('should render two input and one button', () => {
