@@ -1,26 +1,27 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { Button, Form, Segment } from 'semantic-ui-react';
-import REGISTER_SEGMENT_CONFIGURATION from './RegisterSegmentConfiguration';
+import PropTypes from 'prop-types';
+import regiterSegmentConfiguration from './RegisterSegment.config';
 
-export default class RegisterSegment extends PureComponent {
-  render() {
-    const { Input, Select } = Form;
-    const {
-      fullNameInput, nicknameInput, birthdayInput, genderSelect, emailInput, passwordInput,
-      confirmPasswordInput, registerButton,
-    } = REGISTER_SEGMENT_CONFIGURATION;
+const { Input, Select } = Form;
+const {
+  fullNameInput, nicknameInput, birthdayInput, genderSelect, emailInput, passwordInput,
+  confirmPasswordInput, registerButton,
+} = regiterSegmentConfiguration;
 
-    return (
-      <Segment>
-        <Input {...fullNameInput} />
-        <Input {...nicknameInput} />
-        <Input {...birthdayInput} />
-        <Select {...genderSelect} />
-        <Input {...emailInput} />
-        <Input {...passwordInput} />
-        <Input {...confirmPasswordInput} />
-        <Button {...registerButton} />
-      </Segment>
-    );
-  }
-}
+const RegisterSegment = ({ isPasswordViolation }) => (
+  <Segment>
+    <Input {...fullNameInput} />
+    <Input {...nicknameInput} />
+    <Input {...birthdayInput} />
+    <Select {...genderSelect} />
+    <Input {...emailInput} />
+    <Input {...passwordInput} error={isPasswordViolation} />
+    <Input {...confirmPasswordInput} error={isPasswordViolation} />
+    <Button {...registerButton} />
+  </Segment>
+);
+
+RegisterSegment.propTypes = { isPasswordViolation: PropTypes.bool.isRequired };
+
+export default RegisterSegment;
