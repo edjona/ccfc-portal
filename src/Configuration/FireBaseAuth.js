@@ -2,14 +2,14 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBE6avQcp53vH-8qKARGEsLMfrUqO9my4Q',
-  authDomain: 'community-cell-47aaf.firebaseapp.com',
-  databaseURL: 'https://community-cell-47aaf.firebaseio.com',
-  projectId: 'community-cell-47aaf',
-  storageBucket: 'community-cell-47aaf.appspot.com',
-  messagingSenderId: '303255482411',
-  appId: '1:303255482411:web:bda97518770bdc0f043a6e',
-  measurementId: 'G-LD90QV2C1L',
+  apiKey: 'AIzaSyCEm-LzpHcXovQWKNFXDj4ldLOFvCb1Tqs',
+  authDomain: 'ccfc-portal.firebaseapp.com',
+  databaseURL: 'https://ccfc-portal.firebaseio.com',
+  projectId: 'ccfc-portal',
+  storageBucket: 'ccfc-portal.appspot.com',
+  messagingSenderId: '750346375398',
+  appId: '1:750346375398:web:9622439cc140dbdcce2b27',
+  measurementId: 'G-KC9528BZCD',
 };
 
 const firebaseAuth = firebase.initializeApp(firebaseConfig);
