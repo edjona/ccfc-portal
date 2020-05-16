@@ -4,7 +4,6 @@ import COLOR from '../../Constant/Color';
 
 const { POSITION, INPUT_TYPE, SIZE } = GENERAL;
 const { REGISTER_FORM } = ID;
-const { BUTTON_COLOR } = COLOR;
 
 const regiterSegmentConfiguration = {
   fullNameInput: {
@@ -73,7 +72,7 @@ const regiterSegmentConfiguration = {
   registerButton: {
     id: REGISTER_FORM.REGISTER_BUTTON_ID,
     content: 'Register',
-    color: BUTTON_COLOR,
+    color: COLOR.COMPONENT.BUTTON,
     size: SIZE.LARGE,
     fluid: true,
   },
