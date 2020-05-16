@@ -35,7 +35,6 @@
         "linebreak-style": ["error", "windows"],
 
         //eslint rule for max code lines
-        "max-lines": ["error", {"max": 50, "skipBlankLines": true}],
         "max-lines-per-function": ["error", { "max": 50 }],
         "max-depth": ["error", { "max":  2}],
         "complexity": ["error", { "max": 5 }],

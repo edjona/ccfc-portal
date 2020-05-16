@@ -6,7 +6,7 @@ import LoginForm from './LoginForm/LoginForm';
 
 const reactRouterPropTypes = require('react-router-prop-types');
 
-const Login = ({ history }) => {
+const LoginPage = ({ history }) => {
   const { currentUser, setLoginError } = useAuthContext();
 
   const handleLogin = useCallback(
@@ -30,6 +30,6 @@ const Login = ({ history }) => {
   return <LoginForm handleLogin={handleLogin} />;
 };
 
-Login.propTypes = { history: reactRouterPropTypes.history.isRequired };
+LoginPage.propTypes = { history: reactRouterPropTypes.history.isRequired };
 
-export default withRouter(Login);
+export default withRouter(LoginPage);

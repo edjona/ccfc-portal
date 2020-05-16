@@ -2,7 +2,7 @@ import React from 'react';
 import { Header, Segment } from 'semantic-ui-react';
 import { motion } from 'framer-motion';
 import SingleBox from '../../Component/SingleBox/SingleBox';
-import RegisterMessage from '../../Component/RegisterMessage/RegisterMessage';
+import RegisterMessage from '../RegisterPage/RegisterMessage/RegisterMessage';
 
 
 const ErrorPage = () => (

@@ -1,5 +1,5 @@
 import React from 'react';
-import ID from '../../Constant/ID';
+import ID from '../../../Constant/ID';
 
 const { REGISTER_MESSAGE } = ID;
 

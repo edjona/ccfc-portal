@@ -1,4 +1,3 @@
-// eslint-disable-next-line max-lines
 import ID from '../../Constant/ID';
 import GENERAL from '../../Constant/General';
 import COLOR from '../../Constant/Color';

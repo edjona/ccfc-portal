@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import RegisterMessage from './RegisterMessage';
-import ID from '../../Constant/ID';
-import ENDPOINT from '../../Constant/Endpoint';
+import ID from '../../../Constant/ID';
+import ENDPOINT from '../../../Constant/Endpoint';
 import REGISTER_MESSAGE_CONFIGURATION from './RegisterMessage.config';
 
 // eslint-disable-next-line max-lines-per-function

@@ -1,26 +1,7 @@
 import React from 'react';
-import { Button, Form, Message, Segment } from 'semantic-ui-react';
+import { Form, Message } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import registerFormConfiguration from './RegisterForm.config';
-
-const { Input, Select } = Form;
-const {
-  fullNameInput, nicknameInput, birthdayInput, genderSelect, emailInput, passwordInput,
-  confirmPasswordInput, registerButton,
-} = registerFormConfiguration;
-
-const registerSegment = (isPasswordViolation) => (
-  <Segment>
-    <Input {...fullNameInput} />
-    <Input {...nicknameInput} />
-    <Input {...birthdayInput} />
-    <Select {...genderSelect} />
-    <Input {...emailInput} />
-    <Input {...passwordInput} error={isPasswordViolation} />
-    <Input {...confirmPasswordInput} error={isPasswordViolation} />
-    <Button {...registerButton} />
-  </Segment>
-);
+import RegisterSegment from '../RegisterSegment/RegisterSegment';
 
 const passwordViolationError = (
   <Message
@@ -32,7 +13,7 @@ const passwordViolationError = (
 
 const RegisterForm = ({ isPasswordViolation, handleRegister }) => (
   <Form size="large" onSubmit={handleRegister} error={isPasswordViolation}>
-    {registerSegment(isPasswordViolation)}
+    <RegisterSegment isPasswordViolation={isPasswordViolation} />
     {passwordViolationError}
   </Form>
 );

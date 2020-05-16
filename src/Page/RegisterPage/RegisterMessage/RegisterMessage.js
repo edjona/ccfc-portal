@@ -1,8 +1,8 @@
 import React from 'react';
 import { Message } from 'semantic-ui-react';
-import ID from '../../Constant/ID';
-import ENDPOINT from '../../Constant/Endpoint';
-import Teleport from '../Teleport/Teleport';
+import ID from '../../../Constant/ID';
+import ENDPOINT from '../../../Constant/Endpoint';
+import Teleport from '../../../Component/Teleport/Teleport';
 import REGISTER_MESSAGE_CONFIGURATION from './RegisterMessage.config';
 
 const { REGISTER_MESSAGE } = ID;

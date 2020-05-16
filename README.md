@@ -1,7 +1,6 @@
-# community-cell
+# ccfc-portal
 
-An application for storing and organizing groups groups in a group. It basically
-the organizational groping application.
+An application of CCFC.
 
 Feature that develop is:
 
