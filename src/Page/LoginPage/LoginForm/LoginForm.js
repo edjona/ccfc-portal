@@ -13,7 +13,6 @@ const LoginForm = ({ handleLogin }) => {
 
   useEffect(() => {
     if (loginError) {
-      console.log(loginError);
       const errorData = getError(loginError);
       setError(loginError);
       setErrorMessage(errorData);

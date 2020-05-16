@@ -3,13 +3,11 @@ import { shallow } from 'enzyme';
 import LoginMessage from './LoginMessage';
 import ENDPOINT from '../../../Constant/Endpoint';
 
-// eslint-disable-next-line max-lines-per-function
 describe('Login Message', () => {
   const wrapper = shallow(<LoginMessage />);
   const messages = wrapper.find('Message');
   const messagesProperties = messages.props();
 
-  // eslint-disable-next-line max-lines-per-function
   describe('render', () => {
     const loginMessageText = 'Don\'t have account? ';
     const expectedText = 'Register';

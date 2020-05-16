@@ -17,7 +17,6 @@ const Login = ({ history }) => {
       await firebaseAuth.auth().signInWithEmailAndPassword(loginEmail.value, loginPassword.value)
         .then((user) => {
           history.push('/home');
-          console.log(user);
         })
         .catch((error) => {
           setLoginError(error.code);
